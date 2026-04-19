@@ -1,0 +1,18 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "env": {
+    "GEMINI_MODEL": "gemini-1.5-flash",
+    "GROQ_MODEL":   "llama-3.3-70b-versatile"
+  },
+  "functions": {
+    "app/api/generate/route.js": {
+      "maxDuration": 60
+    },
+    "app/api/health/route.js": {
+      "maxDuration": 15
+    }
+  }
+}

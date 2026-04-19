@@ -1,0 +1,3 @@
+/* Minimal global resets — all component styles are inline */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #03040A; }
